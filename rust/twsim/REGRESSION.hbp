@@ -47,8 +47,8 @@ TWSIM_MATCH|receipt=SC-6561-64-optimistic.hbp|python_sha256=8b07af6dbf7255b156ea
 TWSIM_MATCH|receipt=SC-6561-64-optimistic_v.hbp|python_sha256=40e3c1d04c2ec7ea3129c70b03241325596c1ada0a0243faea97e4b1d0107860|json=0
 TWSIM_MATCH|receipt=SC-6561-64-conservative.hbp|python_sha256=f1534ad824c40768bca5ecfe03a5a97f19ab250f5f2384225f829773bfe7527e|json=0
 TWSIM_MATCH|receipt=SC-6561-64-oracle.hbp|python_sha256=8319f8d00965dd975f01d4acb749409ff91fa43f9cf42262adccd8ce9dfc2ebc|json=0
-TWSIM_PENDING|receipt=SC-19683-8-optimistic.hbp|python_receipt_not_final=1|json=0
-TWSIM_PENDING|receipt=SC-19683-8-optimistic_v.hbp|python_receipt_not_final=1|json=0
+TWSIM_MATCH|receipt=SC-19683-8-optimistic.hbp|python_sha256=1477f6c77be14dcaf9bae90a5e0b4965da1d39f54b080a085c99d508c282051f|json=0
+TWSIM_MATCH|receipt=SC-19683-8-optimistic_v.hbp|python_sha256=a2f9531678f4644856bd9f1e3f0659c4d57018ad08fa56f65b83d783e64daf39|json=0
 TWSIM_MATCH|receipt=SC-19683-8-conservative.hbp|python_sha256=8f70ddc93fe27eb6dfe8722ab057fc3ceda658665c7d879b69119722e0b0e748|json=0
 TWSIM_MATCH|receipt=SC-19683-8-oracle.hbp|python_sha256=bbb70f8104560cde13ce24e8a6bf52e1e3309862c3d8d7530be2876fce636ac5|json=0
 TWSIM_MATCH|receipt=SC-19683-64-optimistic.hbp|python_sha256=c40deb185178f72ce5b9537ba694a5f7fbb410ba07cd4a1975f9eb0ff869636a|json=0
@@ -57,4 +57,4 @@ TWSIM_MATCH|receipt=SC-19683-64-conservative.hbp|python_sha256=d9419c5f9ed904934
 TWSIM_MATCH|receipt=SC-19683-64-oracle.hbp|python_sha256=4264b9468f72d1170c318a99fe13abaacbc309ca62e90b6abc9f9d7b1f316ef0|json=0
 TWSIM_MATCH|receipt=TIMEWARP.hbp|python_sha256=b8fedf1a6b265550e2eee3fdcdcb307d5b90e0118088c0e98212d77364e1913c|json=0
 TWSIM_MATCH|receipt=TIMEWARP-16K.hbp|python_sha256=bd542ac210082692414a25e716a2ed53d8fb02bbdfe39a1b3ae9159011f5b53e|json=0
-TWSIM_REGRESSION_SUMMARY|expected=58|matched=56|mismatched=0|pending=2|status=IN_PROGRESS|json=0
+TWSIM_REGRESSION_SUMMARY|expected=58|matched=58|mismatched=0|pending=0|status=COMPLETE|json=0

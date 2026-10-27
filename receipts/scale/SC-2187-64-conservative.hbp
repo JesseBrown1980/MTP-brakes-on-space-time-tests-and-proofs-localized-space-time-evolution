@@ -1,0 +1,2 @@
+SCHDR|base_anchors=83|pool=27|SEG=16|json=0
+SC|D=2187|M=6561|L=64|mode=conservative|anchors=1|exact_fail=0|computations=6561|segments=6561|rollbacks=0|mispredicts=0|messages=6560|cascades=0|absorbed=0|in_time=0|merged=0|unabsorbed=0|makespan=682496|conservative_bound=682496|reach_hist=-|json=0

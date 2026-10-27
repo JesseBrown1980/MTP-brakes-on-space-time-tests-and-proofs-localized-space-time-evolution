@@ -11,7 +11,7 @@ measurement points. A held-out position is measured only when its SHA-256 hash i
 fixed modulus, so the sample is deterministic, unbiased and the same for anyone who
 reruns it. All arithmetic is exact integers, and every receipt line ends in `json=0`.
 
-## The three measurements
+## The four measurements
 
 ### 1. The brake — how far ahead should a drafter run?
 
@@ -62,6 +62,18 @@ acceptance.
   becomes negligible next to 16K of work. The like-for-like fast-message rows show a
   smaller slowing.
 
+### 4. The drafter series, ×3 from 27 to 19,683 drafters
+
+[PREREGISTRATION-SCALE.md](PREREGISTRATION-SCALE.md) → [RESULTS-SCALE.md](RESULTS-SCALE.md)
+
+- 56 receipts, the full grid (7 sizes × 2 latencies × 4 modes); every gate passes. The Rust
+  port `rust/twsim` reproduces all 58 receipts byte for byte.
+- A correction's median reach stays at 3–4 hops (fast messages) and 7–9 hops (slow) across a
+  729-fold range in the number of drafters: the spread is local.
+- The share reaching the end of the timeline falls (slow messages 46% → 10%) and settles.
+- Optimism gains at most 4.7% over waiting and settles at 1.000×, while the oracle ceiling
+  grows to 23,975×: the headroom is there, and only better predictions can take it.
+
 ## Order of events (the proof that nothing was fitted after the fact)
 
 | commit | what |
@@ -83,7 +95,7 @@ These six commits are the history carried over from
 
 ```bash
 pip install numpy
-bash reproduce.sh /path/to/enwik8      # checks the MD5, builds the tables, reruns all three, compares receipts
+bash reproduce.sh /path/to/enwik8      # checks the MD5, builds the tables, reruns measurements 1–3, compares receipts
 ```
 
 ## Files
@@ -95,7 +107,7 @@ compare_16k.py                 the frozen 16-byte vs 16K comparator
 PREREGISTRATION*.md            each protocol, frozen before its run
 RESULTS*.md                    each result, with its gates and verdicts
 receipts/                      every raw and combined receipt, with SHA256SUMS
-reproduce.sh                   one command, all three measurements
+reproduce.sh                   one command, measurements 1–3 (4 runs through run_scale.sh)
 ```
 
 ## Lineage
