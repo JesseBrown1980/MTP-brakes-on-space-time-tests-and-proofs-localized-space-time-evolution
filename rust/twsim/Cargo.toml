@@ -1,0 +1,13 @@
+[package]
+name = "twsim"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.81"
+description = "Several drafters on their own clocks: the timewarp simulation, compiled. Integer-only, json=0."
+license = "MIT"
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+debug = false
